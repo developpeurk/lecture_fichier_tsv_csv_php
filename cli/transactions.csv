@@ -1,0 +1,2 @@
+ID,Date,Transaction Type,Currency,Amount,Client,Contract Name,Contract URL,Invoice URL,Invoice Description,Withdraw Method,Withdraw Account Holder Name,Withdraw Account Number
+11-25 01:01:13,pay_out,USD,-5000.00,,,,,,bank_transfer,Yassine,1234567895202125621235320
