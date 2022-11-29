@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['role'] = 'administrateur';
 
 $title = "Page d'accueil";
 require __DIR__.DIRECTORY_SEPARATOR.'elements'.DIRECTORY_SEPARATOR.'header.php';

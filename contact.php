@@ -1,4 +1,5 @@
 <?php
+session_start();
 $title = "Nous contacter";
 require_once __DIR__.DIRECTORY_SEPARATOR.'data'.DIRECTORY_SEPARATOR.'config.php';
 require_once 'functions.php';
@@ -16,6 +17,10 @@ require __DIR__.DIRECTORY_SEPARATOR.'elements'.DIRECTORY_SEPARATOR.'header.php';
 
 <div class="row">
     <div class="col-md-8">
+        <h2>Debug</h2>
+        <pre>
+            <?php var_dump($_SESSION); ?>
+        </pre>
       <h2>nous contacter</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus dignissimos fugit possimus sequi suscipit vitae. Ad aliquam aperiam consequatur eligendi facilis fugit itaque molestias nemo odio, officia quae quos saepe sed. Doloribus facilis illum labore! Asperiores commodi fugit illo itaque quae quidem sit voluptates? Dicta facilis illo officia pariatur.</p>
     </div>

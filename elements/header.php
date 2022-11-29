@@ -1,5 +1,6 @@
 <?php
   require_once dirname(__DIR__).DIRECTORY_SEPARATOR.'functions.php';
+  require_once dirname(__DIR__).DIRECTORY_SEPARATOR.'functions'.DIRECTORY_SEPARATOR.'auth.php';
 ?>
 
 <!doctype html>
@@ -36,6 +37,12 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <?= nav_menu('nav-link'); ?>
+        </ul>
+        <ul class="navbar navbar-nav">
+            <?php 
+              if(est_connecte()) : ?>
+                <li class="nav-item"><a class="nav nav-link" href="/logout.php">Logout</a></li> 
+            <?php endif;?>
         </ul>
     </div>
 </nav>
